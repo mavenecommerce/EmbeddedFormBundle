@@ -1,0 +1,4 @@
+oro:
+    embeddedform:
+        external_js.label: External js
+        external_css.label: External css

@@ -1,0 +1,10 @@
+parameters:
+    oro_embedded_form.form_type.class: Maven\Bundle\EmbeddedFormBundle\Form\Type\EmbeddedFormType
+
+    maven.embedded_form.twig_extension.resources.class: Maven\Bundle\EmbeddedFormBundle\Twig\ResourceExtension
+
+services:
+    maven.embedded_form.twig_extension.resources:
+        class: "%maven.embedded_form.twig_extension.resources.class%"
+        tags:
+            - { name: twig.extension }

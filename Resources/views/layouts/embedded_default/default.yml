@@ -1,0 +1,16 @@
+layout:
+    actions:
+        - '@add':
+            id: external_css
+            parentId: head
+            blockType: block
+            options:
+                vars:
+                    links: { '@value': $data.embedded_form_entity.external_css }
+        - '@add':
+            id: external_js
+            parentId: head
+            blockType: block
+            options:
+                vars:
+                    links: { '@value': $data.embedded_form_entity.external_js }
